@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{0700E5AF-7743-4126-874D-0616E85D8EF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_DAL", "BLL_DAL\BLL_DAL.csproj", "{772D2B0C-A221-45E2-A343-C749023BEA23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0700E5AF-7743-4126-874D-0616E85D8EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0700E5AF-7743-4126-874D-0616E85D8EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0700E5AF-7743-4126-874D-0616E85D8EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0700E5AF-7743-4126-874D-0616E85D8EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772D2B0C-A221-45E2-A343-C749023BEA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772D2B0C-A221-45E2-A343-C749023BEA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772D2B0C-A221-45E2-A343-C749023BEA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772D2B0C-A221-45E2-A343-C749023BEA23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

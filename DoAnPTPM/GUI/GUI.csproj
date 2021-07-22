@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0700E5AF-7743-4126-874D-0616E85D8EF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.8.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.3.8.2-alpha\lib\net45\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning, Version=3.8.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.MachineLearning.3.8.2-alpha\lib\net45\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math, Version=3.8.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Math.3.8.2-alpha\lib\net45\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core, Version=3.8.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Math.3.8.2-alpha\lib\net45\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics, Version=3.8.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Accord.Statistics.3.8.2-alpha\lib\net45\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\HangHoa.cs" />
+    <Compile Include="AI\KNN_Model.cs" />
+    <Compile Include="ElipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoPhan.Designer.cs">
+      <DependentUpon>frmBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckHoaDon.Designer.cs">
+      <DependentUpon>frmCheckHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcheckPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcheckPN.Designer.cs">
+      <DependentUpon>frmcheckPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckPX.Designer.cs">
+      <DependentUpon>frmCheckPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmErrorSever.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmErrorSever.Designer.cs">
+      <DependentUpon>frmErrorSever.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGoiY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGoiY.Designer.cs">
+      <DependentUpon>frmGoiY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHangHoa.Designer.cs">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDonBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDonBanHang.Designer.cs">
+      <DependentUpon>frmHoaDonBanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKho.Designer.cs">
+      <DependentUpon>frmKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoaiHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiHang.Designer.cs">
+      <DependentUpon>frmLoaiHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuXuat.Designer.cs">
+      <DependentUpon>frmPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fromNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromNCC.Designer.cs">
+      <DependentUpon>fromNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoPhan.resx">
+      <DependentUpon>frmBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckHoaDon.resx">
+      <DependentUpon>frmCheckHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcheckPN.resx">
+      <DependentUpon>frmcheckPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckPX.resx">
+      <DependentUpon>frmCheckPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmErrorSever.resx">
+      <DependentUpon>frmErrorSever.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGoiY.resx">
+      <DependentUpon>frmGoiY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHangHoa.resx">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDonBanHang.resx">
+      <DependentUpon>frmHoaDonBanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKho.resx">
+      <DependentUpon>frmKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiHang.resx">
+      <DependentUpon>frmLoaiHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuNhap.resx">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuXuat.resx">
+      <DependentUpon>frmPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromNCC.resx">
+      <DependentUpon>fromNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_DAL\BLL_DAL.csproj">
+      <Project>{772d2b0c-a221-45e2-a343-c749023bea23}</Project>
+      <Name>BLL_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-and-support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Select.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Accord.3.8.2-alpha\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.2-alpha\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Accord.3.8.2-alpha\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Accord.3.8.2-alpha\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
